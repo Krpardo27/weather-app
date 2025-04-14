@@ -1,9 +1,14 @@
 import axios from 'axios';
 
-const API_KEY = '4c49d38983c946923441ed450832afa1'
+// Usamos import.meta.env para acceder a las variables en Vite
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export const getWeatherByCity = async (city) => {
+  if (!API_KEY) {
+    throw new Error('API key no configurada');
+  }
+
   try {
     const response = await axios.get(BASE_URL, {
       params: {
