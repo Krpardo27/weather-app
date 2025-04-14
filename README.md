@@ -91,3 +91,24 @@ Luego, abre tu navegador y accede a **`http://localhost:5173`**.
 3. **Gestión de Estados**:
    - Pantalla de carga mientras se obtienen datos
    - Mensajes de error para búsquedas fallidas
+
+## **📁 Estructura del Proyecto**
+```plaintext
+├── README.md                  # Documentación del proyecto
+├── eslint.config.js            # Configuración de ESLint para buenas prácticas
+├── index.html                  # Archivo HTML principal
+├── package.json                # Dependencias y scripts de la aplicación
+├── public/
+│   └── vite.svg                # Logo de Vite
+├── src/
+│   ├── App.jsx                 # Componente principal de la aplicación
+│   ├── assets/                 # Recursos estáticos (imágenes, logos)
+│   │   ├── logo.jpeg           # Logo del proyecto
+│   │   └── react.svg           # Logo de React
+│   ├── components/             # Componentes reutilizables
+│   │   ├── WeatherCard.jsx        # Componente para mostrar una nota 
+│   ├── data/
+│   │   └── api.js            # Consumo de API por axios
+│   ├── main.jsx                # Punto de entrada de React
+└── vite.config.js              # Configuración de Vite para optimización
+```
