@@ -1,14 +1,23 @@
-# Aplicación de consulta del Clima
+# Weather App - Consulta el Clima Global
 
-![Logo](src/assets/logo.jpeg)
+Este proyecto es una **aplicación web para consultar condiciones meteorológicas**, desarrollada con **React, Vite y Tailwind CSS**. Permite a los usuarios buscar y visualizar el clima actual de cualquier ciudad del mundo.
 
-Este proyecto es una **aplicación web para administrar y gestionar notas**, desarrollada con **React y Vite**. Permite a los usuarios consultar el clima de su país y ciudad. La aplicación está diseñada para ser rápida, responsiva y fácilmente actualmente es **Progressive Web App (PWA)**.
+## Características principales
 
-## **📌 Características**
+- **Consulta en tiempo real**: Obtén datos meteorológicos actualizados mediante consumo de API con Axios
+- **Búsqueda flexible**: Formulario intuitivo para buscar por ciudad y país
+- **Estado reactivo**: Gestión del estado con hooks de React (useState)
+- **Diseño responsivo**: Interfaz adaptable a cualquier dispositivo
+- **Visualización completa**: Muestra temperatura, humedad, velocidad del viento y más
+- **Feedback visual**: Mensajes de carga y error para mejor experiencia de usuario
 
-- ✅ **Consultar** en una interfaz amigable.
-- ✅ **Diseño responsivo** para dispositivos móviles y escritorio.
-- ✅ **Código modular y escalable** con componentes reutilizables.
+## Tecnologías utilizadas
+
+- ⚛️ React 18 (con Hooks)
+- ⚡ Vite (entorno de desarrollo rápido)
+- 🔄 Axios (para consumo de API REST)
+- 🎨 Tailwind CSS (diseño responsive)
+- 🌐 OpenWeatherMap API (datos meteorológicos)
 
 ## **📁 Estructura del Proyecto**
 
@@ -59,9 +68,26 @@ Luego, abre tu navegador y accede a **`http://localhost:5173`**.
 
 ## **🛠️ Funcionalidades de los Componentes**
 
-- `NoteForm.jsx` - Formulario para Agregar y Editar Notas
-  - Este componente permite a los usuarios ingresar nuevas notas y editarlas.
-- `NoteCard.jsx` - Componente para Mostrar Notas
-  - Cada nota se renderiza dentro de este componente.
-- `NotesList.jsx` - Listado de Notas
-  - Administra la lista de notas dinámicamente.
+## Hooks implementados
+
+- `useState` para gestionar:
+  - Datos del clima
+  - Término de búsqueda
+  - Estados de carga/error
+  - Localización seleccionada
+
+## Componentes principales
+
+1. **Formulario de Búsqueda**:
+   - Campo de entrada para ciudad/país
+   - Validación básica
+   - Evento onSubmit para disparar la búsqueda
+
+2. **Tarjeta del Clima**:
+   - Visualización de datos principales
+   - Iconos condicionales según el clima
+   - Detalles meteorológicos adicionales
+
+3. **Gestión de Estados**:
+   - Pantalla de carga mientras se obtienen datos
+   - Mensajes de error para búsquedas fallidas
