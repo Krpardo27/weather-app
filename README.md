@@ -39,8 +39,8 @@ Para ejecutar la aplicación localmente, sigue estos pasos:
 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/Krpardo27/clima-app.git
-cd clima-app
+git clone https://github.com/Krpardo27/weather-app.git
+cd weather-app
 ```
 
 2. Instalar Dependencias
